@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/noteEasyCluster", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://BrennanLup:BrenLup01@noteeasycluster.yyphr.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
   name: String
