@@ -123,10 +123,6 @@ app.post("/delete", function(req, res){
 
 });
 
-app.get("/about", function(req, res){
-  res.render("about");
-});
-
 app.listen(process.env.PORT || 4000, function() {
   console.log("Server started on port 4000");
 });
